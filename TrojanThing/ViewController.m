@@ -17,6 +17,8 @@
 
 @property (strong, nonatomic) AppDelegate *appDelegate;
 
+
+
 @end
 
 @implementation ViewController
@@ -81,8 +83,18 @@
                 manager.responseSerializer = [AFJSONResponseSerializer serializer];
                 
                 NSString *URLString = @"http://91.250.113.33:3000/api/login";
-                NSDictionary *parameters = @{@"facebookAccessToken": accessToken};
+                NSDictionary *parameters;
+                @try {
+                    parameters = @{@"facebookAccessToken": accessToken};
+                }
+                @catch (NSException *exception) {
+                    NSLog(@"");
+                }
+                @finally {
+                    NSLog(@"");
+                }
                 
+            
                 [manager POST:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
                     NSLog(@"JSON: %@", responseObject);
                     self.appDelegate.userID = [responseObject objectForKey:@"userId"];

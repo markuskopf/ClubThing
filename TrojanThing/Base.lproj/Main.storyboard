@@ -78,6 +78,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kyk-wM-lXq"/>
+                    <connections>
+                        <outlet property="sendLocationButton" destination="LxF-ky-iNi" id="c6b-GI-ce7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJr-6Y-REE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
