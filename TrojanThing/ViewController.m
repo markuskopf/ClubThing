@@ -4,15 +4,18 @@
 //
 //  Created by Markus Kopf on 26/10/13.
 //  Copyright (c) 2013 Markus Kopf. All rights reserved.
-//
+//pod "AFNetworking", "~> 2.0"
 
 #import "ViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import "AppDelegate.h"
-#import "AFNetworking.h"
 #import "AFHTTPRequestOperation.h"
+#import "AFHTTPRequestOperationManager.h"
+
 
 @interface ViewController ()
+
+@property (strong, nonatomic) AppDelegate *appDelegate;
 
 @end
 
@@ -23,6 +26,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    
+    self.appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     
     // See if the app has a valid token for the current state.
     if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
@@ -68,44 +73,30 @@
             completionHandler:^(FBSession *session,
                                 FBSessionState status,
                                 NSError *error) {
-                // Respond to session state changes,
-                // ex: updating the view
-                
-                NSLog(@"");
-                
-                
                 NSString *accessToken = [[FBSession.activeSession accessTokenData] accessToken];
-                
-                
-                
-                // TODO: send accessToken to backend
                 NSLog(@"Print accessToken %@", accessToken);
                 
-                
                 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+                manager.requestSerializer = [AFJSONRequestSerializer serializer];
+                manager.responseSerializer = [AFJSONResponseSerializer serializer];
+                
+                NSString *URLString = @"http://91.250.113.33:3000/api/login";
                 NSDictionary *parameters = @{@"facebookAccessToken": accessToken};
-                [manager POST:@"http://10.11.7.136:3000/api/login" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                
+                [manager POST:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
                     NSLog(@"JSON: %@", responseObject);
+                    self.appDelegate.userID = [responseObject objectForKey:@"userId"];
                 } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                     NSLog(@"Error: %@", error);
                 }];
-                
-                
             }];
-    
- 
-    
-    
 }
-
-
 
 #pragma mark - FBLoginView delegate
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
     // if you become logged in, no longer flag to skip log in
     self.shouldSkipLogIn = NO;
-
 }
 
 - (void)loginView:(FBLoginView *)loginView

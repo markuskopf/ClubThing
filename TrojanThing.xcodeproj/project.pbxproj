@@ -10,6 +10,7 @@
 		151386DF061641C5A2F78ABC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7BDA220354B9FAA85BBD4 /* libPods.a */; };
 		7582E1FB181C04A6005E5B8D /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7582E1FA181C04A6005E5B8D /* facebook.png */; };
 		7582E1FF181C060C005E5B8D /* SendLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7582E1FE181C060C005E5B8D /* SendLocationViewController.m */; };
+		75902482181C3537004E01C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75902481181C3537004E01C4 /* CoreLocation.framework */; };
 		75C2E7A5181BDE3100A324E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A4181BDE3100A324E8 /* Foundation.framework */; };
 		75C2E7A7181BDE3100A324E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A6181BDE3100A324E8 /* CoreGraphics.framework */; };
 		75C2E7A9181BDE3100A324E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A8181BDE3100A324E8 /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 		7582E1FA181C04A6005E5B8D /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		7582E1FD181C060C005E5B8D /* SendLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendLocationViewController.h; sourceTree = "<group>"; };
 		7582E1FE181C060C005E5B8D /* SendLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendLocationViewController.m; sourceTree = "<group>"; };
+		75902481181C3537004E01C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		75C2E7A1181BDE3100A324E8 /* TrojanThing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrojanThing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C2E7A4181BDE3100A324E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75C2E7A6181BDE3100A324E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75902482181C3537004E01C4 /* CoreLocation.framework in Frameworks */,
 				75C2E7A7181BDE3100A324E8 /* CoreGraphics.framework in Frameworks */,
 				75F0D2BA181BF64D007F3A6B /* FacebookSDK.framework in Frameworks */,
 				75C2E7A9181BDE3100A324E8 /* UIKit.framework in Frameworks */,
@@ -125,6 +128,7 @@
 		75C2E7A3181BDE3100A324E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75902481181C3537004E01C4 /* CoreLocation.framework */,
 				75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */,
 				75C2E7A4181BDE3100A324E8 /* Foundation.framework */,
 				75C2E7A6181BDE3100A324E8 /* CoreGraphics.framework */,
