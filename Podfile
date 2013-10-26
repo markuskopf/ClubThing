@@ -1,4 +1,4 @@
-platform :ios, '6.0'
+platform :ios
 
 pod 'AFNetworking', '0.9.1'
-pod ‘JSONKit’, 
+pod 'Reachability',      '~> 3.1.1'

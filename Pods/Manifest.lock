@@ -1,10 +1,13 @@
 PODS:
   - AFNetworking (0.9.1)
+  - Reachability (3.1.1)
 
 DEPENDENCIES:
   - AFNetworking (= 0.9.1)
+  - Reachability (~> 3.1.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 081ec3c1f4768c87ae79d69a96fcc9479e232e81
+  Reachability: 2be6bc2fd2bd31d97f5db33e75e4b29c79e95883
 
 COCOAPODS: 0.27.1
