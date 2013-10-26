@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75C2E7A5181BDE3100A324E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A4181BDE3100A324E8 /* Foundation.framework */; };
+		75C2E7A7181BDE3100A324E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A6181BDE3100A324E8 /* CoreGraphics.framework */; };
+		75C2E7A9181BDE3100A324E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A8181BDE3100A324E8 /* UIKit.framework */; };
+		75C2E7AF181BDE3100A324E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7AD181BDE3100A324E8 /* InfoPlist.strings */; };
+		75C2E7B1181BDE3100A324E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7B0181BDE3100A324E8 /* main.m */; };
+		75C2E7B5181BDE3100A324E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7B4181BDE3100A324E8 /* AppDelegate.m */; };
+		75C2E7B8181BDE3100A324E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7B6181BDE3100A324E8 /* Main.storyboard */; };
+		75C2E7BB181BDE3100A324E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7BA181BDE3100A324E8 /* ViewController.m */; };
+		75C2E7BD181BDE3100A324E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7BC181BDE3100A324E8 /* Images.xcassets */; };
+		75C2E7C4181BDE3100A324E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7C3181BDE3100A324E8 /* XCTest.framework */; };
+		75C2E7C5181BDE3100A324E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A4181BDE3100A324E8 /* Foundation.framework */; };
+		75C2E7C6181BDE3100A324E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A8181BDE3100A324E8 /* UIKit.framework */; };
+		75C2E7CE181BDE3100A324E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7CC181BDE3100A324E8 /* InfoPlist.strings */; };
+		75C2E7D0181BDE3100A324E8 /* TrojanThingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75C2E7C7181BDE3100A324E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C2E799181BDE3100A324E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C2E7A0181BDE3100A324E8;
+			remoteInfo = TrojanThing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75C2E7A1181BDE3100A324E8 /* TrojanThing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrojanThing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C2E7A4181BDE3100A324E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75C2E7A6181BDE3100A324E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		75C2E7A8181BDE3100A324E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		75C2E7AC181BDE3100A324E8 /* TrojanThing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrojanThing-Info.plist"; sourceTree = "<group>"; };
+		75C2E7AE181BDE3100A324E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75C2E7B0181BDE3100A324E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75C2E7B2181BDE3100A324E8 /* TrojanThing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrojanThing-Prefix.pch"; sourceTree = "<group>"; };
+		75C2E7B3181BDE3100A324E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75C2E7B4181BDE3100A324E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75C2E7B7181BDE3100A324E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75C2E7B9181BDE3100A324E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		75C2E7BA181BDE3100A324E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		75C2E7BC181BDE3100A324E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75C2E7C2181BDE3100A324E8 /* TrojanThingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrojanThingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C2E7C3181BDE3100A324E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		75C2E7CB181BDE3100A324E8 /* TrojanThingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrojanThingTests-Info.plist"; sourceTree = "<group>"; };
+		75C2E7CD181BDE3100A324E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrojanThingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75C2E79E181BDE3100A324E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C2E7A7181BDE3100A324E8 /* CoreGraphics.framework in Frameworks */,
+				75C2E7A9181BDE3100A324E8 /* UIKit.framework in Frameworks */,
+				75C2E7A5181BDE3100A324E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C2E7BF181BDE3100A324E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C2E7C4181BDE3100A324E8 /* XCTest.framework in Frameworks */,
+				75C2E7C6181BDE3100A324E8 /* UIKit.framework in Frameworks */,
+				75C2E7C5181BDE3100A324E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75C2E798181BDE3100A324E8 = {
+			isa = PBXGroup;
+			children = (
+				75C2E7AA181BDE3100A324E8 /* TrojanThing */,
+				75C2E7C9181BDE3100A324E8 /* TrojanThingTests */,
+				75C2E7A3181BDE3100A324E8 /* Frameworks */,
+				75C2E7A2181BDE3100A324E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75C2E7A2181BDE3100A324E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75C2E7A1181BDE3100A324E8 /* TrojanThing.app */,
+				75C2E7C2181BDE3100A324E8 /* TrojanThingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75C2E7A3181BDE3100A324E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75C2E7A4181BDE3100A324E8 /* Foundation.framework */,
+				75C2E7A6181BDE3100A324E8 /* CoreGraphics.framework */,
+				75C2E7A8181BDE3100A324E8 /* UIKit.framework */,
+				75C2E7C3181BDE3100A324E8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75C2E7AA181BDE3100A324E8 /* TrojanThing */ = {
+			isa = PBXGroup;
+			children = (
+				75C2E7B3181BDE3100A324E8 /* AppDelegate.h */,
+				75C2E7B4181BDE3100A324E8 /* AppDelegate.m */,
+				75C2E7B6181BDE3100A324E8 /* Main.storyboard */,
+				75C2E7B9181BDE3100A324E8 /* ViewController.h */,
+				75C2E7BA181BDE3100A324E8 /* ViewController.m */,
+				75C2E7BC181BDE3100A324E8 /* Images.xcassets */,
+				75C2E7AB181BDE3100A324E8 /* Supporting Files */,
+			);
+			path = TrojanThing;
+			sourceTree = "<group>";
+		};
+		75C2E7AB181BDE3100A324E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75C2E7AC181BDE3100A324E8 /* TrojanThing-Info.plist */,
+				75C2E7AD181BDE3100A324E8 /* InfoPlist.strings */,
+				75C2E7B0181BDE3100A324E8 /* main.m */,
+				75C2E7B2181BDE3100A324E8 /* TrojanThing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75C2E7C9181BDE3100A324E8 /* TrojanThingTests */ = {
+			isa = PBXGroup;
+			children = (
+				75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */,
+				75C2E7CA181BDE3100A324E8 /* Supporting Files */,
+			);
+			path = TrojanThingTests;
+			sourceTree = "<group>";
+		};
+		75C2E7CA181BDE3100A324E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75C2E7CB181BDE3100A324E8 /* TrojanThingTests-Info.plist */,
+				75C2E7CC181BDE3100A324E8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75C2E7A0181BDE3100A324E8 /* TrojanThing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C2E7D3181BDE3100A324E8 /* Build configuration list for PBXNativeTarget "TrojanThing" */;
+			buildPhases = (
+				75C2E79D181BDE3100A324E8 /* Sources */,
+				75C2E79E181BDE3100A324E8 /* Frameworks */,
+				75C2E79F181BDE3100A324E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrojanThing;
+			productName = TrojanThing;
+			productReference = 75C2E7A1181BDE3100A324E8 /* TrojanThing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75C2E7C1181BDE3100A324E8 /* TrojanThingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C2E7D6181BDE3100A324E8 /* Build configuration list for PBXNativeTarget "TrojanThingTests" */;
+			buildPhases = (
+				75C2E7BE181BDE3100A324E8 /* Sources */,
+				75C2E7BF181BDE3100A324E8 /* Frameworks */,
+				75C2E7C0181BDE3100A324E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C2E7C8181BDE3100A324E8 /* PBXTargetDependency */,
+			);
+			name = TrojanThingTests;
+			productName = TrojanThingTests;
+			productReference = 75C2E7C2181BDE3100A324E8 /* TrojanThingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75C2E799181BDE3100A324E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Markus Kopf";
+				TargetAttributes = {
+					75C2E7C1181BDE3100A324E8 = {
+						TestTargetID = 75C2E7A0181BDE3100A324E8;
+					};
+				};
+			};
+			buildConfigurationList = 75C2E79C181BDE3100A324E8 /* Build configuration list for PBXProject "TrojanThing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75C2E798181BDE3100A324E8;
+			productRefGroup = 75C2E7A2181BDE3100A324E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75C2E7A0181BDE3100A324E8 /* TrojanThing */,
+				75C2E7C1181BDE3100A324E8 /* TrojanThingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75C2E79F181BDE3100A324E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C2E7BD181BDE3100A324E8 /* Images.xcassets in Resources */,
+				75C2E7AF181BDE3100A324E8 /* InfoPlist.strings in Resources */,
+				75C2E7B8181BDE3100A324E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C2E7C0181BDE3100A324E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C2E7CE181BDE3100A324E8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75C2E79D181BDE3100A324E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C2E7BB181BDE3100A324E8 /* ViewController.m in Sources */,
+				75C2E7B5181BDE3100A324E8 /* AppDelegate.m in Sources */,
+				75C2E7B1181BDE3100A324E8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C2E7BE181BDE3100A324E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C2E7D0181BDE3100A324E8 /* TrojanThingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75C2E7C8181BDE3100A324E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75C2E7A0181BDE3100A324E8 /* TrojanThing */;
+			targetProxy = 75C2E7C7181BDE3100A324E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75C2E7AD181BDE3100A324E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C2E7AE181BDE3100A324E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75C2E7B6181BDE3100A324E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C2E7B7181BDE3100A324E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75C2E7CC181BDE3100A324E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C2E7CD181BDE3100A324E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75C2E7D1181BDE3100A324E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75C2E7D2181BDE3100A324E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75C2E7D4181BDE3100A324E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
+				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75C2E7D5181BDE3100A324E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
+				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		75C2E7D7181BDE3100A324E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrojanThing.app/TrojanThing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TrojanThingTests/TrojanThingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		75C2E7D8181BDE3100A324E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrojanThing.app/TrojanThing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
+				INFOPLIST_FILE = "TrojanThingTests/TrojanThingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75C2E79C181BDE3100A324E8 /* Build configuration list for PBXProject "TrojanThing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C2E7D1181BDE3100A324E8 /* Debug */,
+				75C2E7D2181BDE3100A324E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C2E7D3181BDE3100A324E8 /* Build configuration list for PBXNativeTarget "TrojanThing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C2E7D4181BDE3100A324E8 /* Debug */,
+				75C2E7D5181BDE3100A324E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75C2E7D6181BDE3100A324E8 /* Build configuration list for PBXNativeTarget "TrojanThingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C2E7D7181BDE3100A324E8 /* Debug */,
+				75C2E7D8181BDE3100A324E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75C2E799181BDE3100A324E8 /* Project object */;
+}
