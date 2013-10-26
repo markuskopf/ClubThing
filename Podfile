@@ -1,4 +1,4 @@
-platform :ios
+platform :ios, "7.0"
 
-pod 'AFNetworking', '0.9.1'
-pod 'Reachability',      '~> 3.1.1'
+pod 'AFNetworking'
+pod 'Reachability'

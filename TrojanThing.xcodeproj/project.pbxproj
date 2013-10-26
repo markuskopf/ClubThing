@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		151386DF061641C5A2F78ABC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7BDA220354B9FAA85BBD4 /* libPods.a */; };
+		7582E1FB181C04A6005E5B8D /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7582E1FA181C04A6005E5B8D /* facebook.png */; };
+		7582E1FF181C060C005E5B8D /* SendLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7582E1FE181C060C005E5B8D /* SendLocationViewController.m */; };
 		75C2E7A5181BDE3100A324E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A4181BDE3100A324E8 /* Foundation.framework */; };
 		75C2E7A7181BDE3100A324E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A6181BDE3100A324E8 /* CoreGraphics.framework */; };
 		75C2E7A9181BDE3100A324E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A8181BDE3100A324E8 /* UIKit.framework */; };
@@ -23,6 +25,7 @@
 		75C2E7CE181BDE3100A324E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7CC181BDE3100A324E8 /* InfoPlist.strings */; };
 		75C2E7D0181BDE3100A324E8 /* TrojanThingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */; };
 		75F0D2B8181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F0D2B7181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m */; };
+		75F0D2BA181BF64D007F3A6B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		09A872D60D834667B04629E7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		18C7BDA220354B9FAA85BBD4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7582E1FA181C04A6005E5B8D /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		7582E1FD181C060C005E5B8D /* SendLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendLocationViewController.h; sourceTree = "<group>"; };
+		7582E1FE181C060C005E5B8D /* SendLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendLocationViewController.m; sourceTree = "<group>"; };
 		75C2E7A1181BDE3100A324E8 /* TrojanThing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrojanThing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C2E7A4181BDE3100A324E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75C2E7A6181BDE3100A324E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +65,7 @@
 		75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrojanThingTests.m; sourceTree = "<group>"; };
 		75F0D2B6181BEF7C007F3A6B /* CrunchedDataTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchedDataTableViewViewController.h; sourceTree = "<group>"; };
 		75F0D2B7181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchedDataTableViewViewController.m; sourceTree = "<group>"; };
+		75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C2E7A7181BDE3100A324E8 /* CoreGraphics.framework in Frameworks */,
+				75F0D2BA181BF64D007F3A6B /* FacebookSDK.framework in Frameworks */,
 				75C2E7A9181BDE3100A324E8 /* UIKit.framework in Frameworks */,
 				75C2E7A5181BDE3100A324E8 /* Foundation.framework in Frameworks */,
 				151386DF061641C5A2F78ABC /* libPods.a in Frameworks */,
@@ -86,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7582E1FC181C04AD005E5B8D /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				7582E1FA181C04A6005E5B8D /* facebook.png */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
 		75C2E798181BDE3100A324E8 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +125,7 @@
 		75C2E7A3181BDE3100A324E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */,
 				75C2E7A4181BDE3100A324E8 /* Foundation.framework */,
 				75C2E7A6181BDE3100A324E8 /* CoreGraphics.framework */,
 				75C2E7A8181BDE3100A324E8 /* UIKit.framework */,
@@ -121,11 +138,14 @@
 		75C2E7AA181BDE3100A324E8 /* TrojanThing */ = {
 			isa = PBXGroup;
 			children = (
+				7582E1FC181C04AD005E5B8D /* Ressources */,
 				75C2E7B3181BDE3100A324E8 /* AppDelegate.h */,
 				75C2E7B4181BDE3100A324E8 /* AppDelegate.m */,
 				75C2E7B6181BDE3100A324E8 /* Main.storyboard */,
 				75C2E7B9181BDE3100A324E8 /* ViewController.h */,
 				75C2E7BA181BDE3100A324E8 /* ViewController.m */,
+				7582E1FD181C060C005E5B8D /* SendLocationViewController.h */,
+				7582E1FE181C060C005E5B8D /* SendLocationViewController.m */,
 				75F0D2B6181BEF7C007F3A6B /* CrunchedDataTableViewViewController.h */,
 				75F0D2B7181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m */,
 				75C2E7BC181BDE3100A324E8 /* Images.xcassets */,
@@ -242,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C2E7BD181BDE3100A324E8 /* Images.xcassets in Resources */,
+				7582E1FB181C04A6005E5B8D /* facebook.png in Resources */,
 				75C2E7AF181BDE3100A324E8 /* InfoPlist.strings in Resources */,
 				75C2E7B8181BDE3100A324E8 /* Main.storyboard in Resources */,
 			);
@@ -295,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7582E1FF181C060C005E5B8D /* SendLocationViewController.m in Sources */,
 				75F0D2B8181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m in Sources */,
 				75C2E7BB181BDE3100A324E8 /* ViewController.m in Sources */,
 				75C2E7B5181BDE3100A324E8 /* AppDelegate.m in Sources */,
@@ -381,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -414,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -426,6 +448,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/markuskopf/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
 				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";
@@ -441,6 +467,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/markuskopf/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
 				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";

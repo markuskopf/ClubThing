@@ -7,12 +7,24 @@
 //
 
 #import "AppDelegate.h"
+#import <FacebookSDK/FBSessionTokenCachingStrategy.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import "ViewController.h"
+
+@interface AppDelegate ()
+
+@property (nonatomic, strong) ViewController *viewController;
+
+@end
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+    
     return YES;
 }
 							
@@ -33,14 +45,113 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
+
+
+- (void)sessionStateChanged:(FBSession *)session state:(FBSessionState) state error:(NSError *)error
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    switch (state) {
+        case FBSessionStateOpen: {
+            NSLog(@"");
+//            UIViewController *topViewController =
+//            [self.navController topViewController];
+//            if ([[topViewController modalViewController]
+//                 isKindOfClass:[SCLoginViewController class]]) {
+//                [topViewController dismissModalViewControllerAnimated:YES];
+//            }
+        }
+            break;
+        case FBSessionStateClosed:
+        case FBSessionStateClosedLoginFailed:
+            // Once the user has logged in, we want them to
+            // be looking at the root view.
+//            [self.navController popToRootViewControllerAnimated:NO];
+            
+            [FBSession.activeSession closeAndClearTokenInformation];
+            
+//            [self showLoginView];
+            break;
+        default:
+            break;
+    }
+    
+    if (error) {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Error"
+                                  message:error.localizedDescription
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    }    
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
+
+- (void)openSession;
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [FBSession openActiveSessionWithReadPermissions:nil
+                                       allowLoginUI:YES
+                                  completionHandler:
+     ^(FBSession *session,
+       FBSessionState state, NSError *error) {
+         [self sessionStateChanged:session state:state error:error];
+     }];
+}
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    // Facebook SDK * login flow *
+    // Attempt to handle URLs to complete any auth (e.g., SSO) flow.
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication fallbackHandler:^(FBAppCall *call) {
+        // Facebook SDK * App Linking *
+        // For simplicity, this sample will ignore the link if the session is already
+        // open but a more advanced app could support features like user switching.
+        if (call.accessTokenData) {
+            if ([FBSession activeSession].isOpen) {
+                NSLog(@"INFO: Ignoring app link because current session is open.");
+            }
+            else {
+                [self handleAppLink:call.accessTokenData];
+            }
+        }
+    }];
+}
+
+
+// Helper method to wrap logic for handling app links.
+- (void)handleAppLink:(FBAccessTokenData *)appLinkToken {
+    // Initialize a new blank session instance...
+    FBSession *appLinkSession = [[FBSession alloc] initWithAppID:nil
+                                                     permissions:nil
+                                                 defaultAudience:FBSessionDefaultAudienceNone
+                                                 urlSchemeSuffix:nil
+                                              tokenCacheStrategy:[FBSessionTokenCachingStrategy nullCacheInstance] ];
+    [FBSession setActiveSession:appLinkSession];
+    // ... and open it from the App Link's Token.
+    [appLinkSession openFromAccessTokenData:appLinkToken
+                          completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+                              // Forward any errors to the FBLoginView delegate.
+                              if (error) {
+                                  [self.viewController loginView:nil handleError:error];
+                              }
+                          }];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    // Facebook SDK * pro-tip *
+    // if the app is going away, we close the session object; this is a good idea because
+    // things may be hanging off the session, that need releasing (completion block, etc.) and
+    // other components in the app may be awaiting close notification in order to do cleanup
+    [FBSession.activeSession close];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [FBAppEvents activateApp];
+    
+    // Facebook SDK * login flow *
+    // We need to properly handle activation of the application with regards to SSO
+    //  (e.g., returning from iOS 6.0 authorization dialog or from fast app switching).
+    [FBAppCall handleDidBecomeActive];
 }
 
 @end

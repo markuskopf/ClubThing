@@ -37,17 +37,81 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3ml-kb-HrZ" kind="push" id="oKs-t8-gnz"/>
+                                    <action selector="facebookLoginPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HPs-oU-oTP"/>
+                                    <segue destination="o3X-7O-WDt" kind="push" id="Iyy-u0-dMW"/>
+                                </connections>
+                            </button>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7mZ-wR-u24">
+                                <rect key="frame" x="53" y="208" width="204" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="left" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epK-Ki-nrP" customClass="FBLoginView">
+                                        <rect key="frame" x="-7" y="87" width="218" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Start sharing meals you eat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="174" translatesAutoresizingMaskIntoConstraints="NO" id="8Sd-1O-mBH">
+                                        <rect key="frame" x="15" y="20" width="174" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xu-ev-5Be">
+                                        <rect key="frame" x="12" y="147" width="180" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                        <state key="normal" title="(Or click here to skip login)">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kbt-C4-hID"/>
+                    <connections>
+                        <outlet property="FBLoginView" destination="epK-Ki-nrP" id="rUI-O1-i4n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="46"/>
+        </scene>
+        <!--Send Location View Controller-->
+        <scene sceneID="Fhz-1P-Q6A">
+            <objects>
+                <viewController id="o3X-7O-WDt" customClass="SendLocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8gW-cr-VgK"/>
+                        <viewControllerLayoutGuide type="bottom" id="i7m-Ob-29X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="USx-Rc-69P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxF-ky-iNi">
+                                <rect key="frame" x="0.0" y="257" width="325" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send my Lcoation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendLocationToServer:" destination="o3X-7O-WDt" eventType="touchUpInside" id="os1-om-Hla"/>
+                                    <segue destination="3ml-kb-HrZ" kind="push" id="xjG-4e-lxl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Kbt-C4-hID"/>
+                    <navigationItem key="navigationItem" id="kyk-wM-lXq"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJr-6Y-REE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="46"/>
+            <point key="canvasLocation" x="1023" y="46"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="wTF-eG-Xfw">
@@ -76,7 +140,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xb9-LJ-M3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1315" y="41"/>
+            <point key="canvasLocation" x="1486" y="46"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PLq-P9-28z">
