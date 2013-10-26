@@ -98,7 +98,6 @@
             NSLog(@"Interval of newLocation timestamp: %d", abs(interval));
             NSLog(@"New-Location: %@", newLocation.description);
 
-
             if (abs(interval)<30 &&
                 (newLocation.coordinate.latitude!=oldLocation.coordinate.latitude ||
                  newLocation.coordinate.longitude!=oldLocation.coordinate.longitude)) {
