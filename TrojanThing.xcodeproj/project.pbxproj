@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		151386DF061641C5A2F78ABC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7BDA220354B9FAA85BBD4 /* libPods.a */; };
 		751224CF182EBBD700F040A6 /* berlin_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 751224CE182EBBD700F040A6 /* berlin_night.png */; };
+		7536B3DE182EDEA800AC5A0B /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7536B3D8182EDEA800AC5A0B /* libTestFlight.a */; };
+		7536B3DF182EDEA800AC5A0B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7536B3D9182EDEA800AC5A0B /* README.md */; };
+		7536B3E0182EDEA800AC5A0B /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 7536B3DA182EDEA800AC5A0B /* release_notes.md */; };
 		75720730182E84240050A28D /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7572072F182E84240050A28D /* AppIcon.png */; };
 		75720733182E959C0050A28D /* VenueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75720732182E959C0050A28D /* VenueTableViewController.m */; };
 		7582E1FB181C04A6005E5B8D /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7582E1FA181C04A6005E5B8D /* facebook.png */; };
@@ -46,6 +49,12 @@
 		09A872D60D834667B04629E7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		18C7BDA220354B9FAA85BBD4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		751224CE182EBBD700F040A6 /* berlin_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = berlin_night.png; sourceTree = "<group>"; };
+		7536B3D8182EDEA800AC5A0B /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		7536B3D9182EDEA800AC5A0B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7536B3DA182EDEA800AC5A0B /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		7536B3DB182EDEA800AC5A0B /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		7536B3DC182EDEA800AC5A0B /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		7536B3DD182EDEA800AC5A0B /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		7572072F182E84240050A28D /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		75720731182E959C0050A28D /* VenueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewController.h; sourceTree = "<group>"; };
 		75720732182E959C0050A28D /* VenueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewController.m; sourceTree = "<group>"; };
@@ -83,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75902482181C3537004E01C4 /* CoreLocation.framework in Frameworks */,
+				7536B3DE182EDEA800AC5A0B /* libTestFlight.a in Frameworks */,
 				75C2E7A7181BDE3100A324E8 /* CoreGraphics.framework in Frameworks */,
 				75F0D2BA181BF64D007F3A6B /* FacebookSDK.framework in Frameworks */,
 				75C2E7A9181BDE3100A324E8 /* UIKit.framework in Frameworks */,
@@ -110,6 +120,27 @@
 				751224CE182EBBD700F040A6 /* berlin_night.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		7536B3D6182EDE8800AC5A0B /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				7536B3D7182EDE9300AC5A0B /* TestFlight */,
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+		7536B3D7182EDE9300AC5A0B /* TestFlight */ = {
+			isa = PBXGroup;
+			children = (
+				7536B3D8182EDEA800AC5A0B /* libTestFlight.a */,
+				7536B3D9182EDEA800AC5A0B /* README.md */,
+				7536B3DA182EDEA800AC5A0B /* release_notes.md */,
+				7536B3DB182EDEA800AC5A0B /* TestFlight.h */,
+				7536B3DC182EDEA800AC5A0B /* TestFlight+AsyncLogging.h */,
+				7536B3DD182EDEA800AC5A0B /* TestFlight+ManualSessions.h */,
+			);
+			name = TestFlight;
 			sourceTree = "<group>";
 		};
 		7582E1FC181C04AD005E5B8D /* Ressources */ = {
@@ -159,6 +190,7 @@
 		75C2E7AA181BDE3100A324E8 /* TrojanThing */ = {
 			isa = PBXGroup;
 			children = (
+				7536B3D6182EDE8800AC5A0B /* 3rd */,
 				7582E1FC181C04AD005E5B8D /* Ressources */,
 				75C2E7B3181BDE3100A324E8 /* AppDelegate.h */,
 				75C2E7B4181BDE3100A324E8 /* AppDelegate.m */,
@@ -255,6 +287,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Markus Kopf";
 				TargetAttributes = {
+					75C2E7A0181BDE3100A324E8 = {
+						DevelopmentTeam = Y9J27A34XZ;
+					};
 					75C2E7C1181BDE3100A324E8 = {
 						TestTargetID = 75C2E7A0181BDE3100A324E8;
 					};
@@ -284,9 +319,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7536B3E0182EDEA800AC5A0B /* release_notes.md in Resources */,
 				751224CF182EBBD700F040A6 /* berlin_night.png in Resources */,
 				75720730182E84240050A28D /* AppIcon.png in Resources */,
 				75C2E7BD181BDE3100A324E8 /* Images.xcassets in Resources */,
+				7536B3DF182EDEA800AC5A0B /* README.md in Resources */,
 				7582E1FB181C04A6005E5B8D /* facebook.png in Resources */,
 				75C2E7AF181BDE3100A324E8 /* InfoPlist.strings in Resources */,
 				75C2E7B8181BDE3100A324E8 /* Main.storyboard in Resources */,
@@ -473,6 +510,8 @@
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/markuskopf/Documents/FacebookSDK,
@@ -480,7 +519,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
 				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "02DDBF68-F99C-4A0D-B86B-E0E854127969";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -491,6 +535,9 @@
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/markuskopf/Documents/FacebookSDK,
@@ -498,7 +545,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
 				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "02DDBF68-F99C-4A0D-B86B-E0E854127969";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
