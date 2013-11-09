@@ -9,11 +9,11 @@
 #import "AppDelegate.h"
 #import <FacebookSDK/FBSessionTokenCachingStrategy.h>
 #import <FacebookSDK/FacebookSDK.h>
-#import "ViewController.h"
+#import "LandingViewController.h"
 
 @interface AppDelegate ()
 
-@property (nonatomic, strong) ViewController *viewController;
+@property (nonatomic, strong) LandingViewController *viewController;
 
 @end
 

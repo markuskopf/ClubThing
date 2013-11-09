@@ -20,7 +20,7 @@
 		75C2E7B1181BDE3100A324E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7B0181BDE3100A324E8 /* main.m */; };
 		75C2E7B5181BDE3100A324E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7B4181BDE3100A324E8 /* AppDelegate.m */; };
 		75C2E7B8181BDE3100A324E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7B6181BDE3100A324E8 /* Main.storyboard */; };
-		75C2E7BB181BDE3100A324E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7BA181BDE3100A324E8 /* ViewController.m */; };
+		75C2E7BB181BDE3100A324E8 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7BA181BDE3100A324E8 /* LandingViewController.m */; };
 		75C2E7BD181BDE3100A324E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7BC181BDE3100A324E8 /* Images.xcassets */; };
 		75C2E7C4181BDE3100A324E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7C3181BDE3100A324E8 /* XCTest.framework */; };
 		75C2E7C5181BDE3100A324E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A4181BDE3100A324E8 /* Foundation.framework */; };
@@ -62,8 +62,8 @@
 		75C2E7B3181BDE3100A324E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75C2E7B4181BDE3100A324E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		75C2E7B7181BDE3100A324E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		75C2E7B9181BDE3100A324E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		75C2E7BA181BDE3100A324E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		75C2E7B9181BDE3100A324E8 /* LandingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		75C2E7BA181BDE3100A324E8 /* LandingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
 		75C2E7BC181BDE3100A324E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		75C2E7C2181BDE3100A324E8 /* TrojanThingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrojanThingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C2E7C3181BDE3100A324E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -152,8 +152,8 @@
 				75C2E7B3181BDE3100A324E8 /* AppDelegate.h */,
 				75C2E7B4181BDE3100A324E8 /* AppDelegate.m */,
 				75C2E7B6181BDE3100A324E8 /* Main.storyboard */,
-				75C2E7B9181BDE3100A324E8 /* ViewController.h */,
-				75C2E7BA181BDE3100A324E8 /* ViewController.m */,
+				75C2E7B9181BDE3100A324E8 /* LandingViewController.h */,
+				75C2E7BA181BDE3100A324E8 /* LandingViewController.m */,
 				7582E1FD181C060C005E5B8D /* SendLocationViewController.h */,
 				7582E1FE181C060C005E5B8D /* SendLocationViewController.m */,
 				75720731182E959C0050A28D /* VenueTableViewController.h */,
@@ -331,7 +331,7 @@
 			files = (
 				7582E1FF181C060C005E5B8D /* SendLocationViewController.m in Sources */,
 				75F0D2B8181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m in Sources */,
-				75C2E7BB181BDE3100A324E8 /* ViewController.m in Sources */,
+				75C2E7BB181BDE3100A324E8 /* LandingViewController.m in Sources */,
 				75C2E7B5181BDE3100A324E8 /* AppDelegate.m in Sources */,
 				75C2E7B1181BDE3100A324E8 /* main.m in Sources */,
 				75720733182E959C0050A28D /* VenueTableViewController.m in Sources */,

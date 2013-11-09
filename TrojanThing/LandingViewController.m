@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 Markus Kopf. All rights reserved.
 //pod "AFNetworking", "~> 2.0"
 
-#import "ViewController.h"
+#import "LandingViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import "AppDelegate.h"
 #import "AFHTTPRequestOperation.h"
 #import "AFHTTPRequestOperationManager.h"
 
 
-@interface ViewController ()
+@interface LandingViewController ()
 
 @property (strong, nonatomic) AppDelegate *appDelegate;
 
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation ViewController
+@implementation LandingViewController
 
 - (void)viewDidLoad
 {
