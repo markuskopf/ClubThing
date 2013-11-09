@@ -10,6 +10,8 @@
 
 @interface VenueTableViewController ()
 
+@property (nonatomic, strong) NSArray *tableData;
+
 @end
 
 @implementation VenueTableViewController
@@ -23,18 +25,20 @@
     return self;
 }
 
-
-- (void)initVenues
+- (void)initTableData
 {
-    self.venues = @[@"Weekend Club", @"Tresor Club", @"Bang Bang Club"];
-    
+    for (id element in self.venues) {
+        if ([element isEqualToString:@"venues"]) {
+            self.tableData = [self.venues objectForKey:element];
+        }
+    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    [self initVenues];
+    [self initTableData];
     
 
     // Uncomment the following line to preserve selection between presentations.
@@ -59,7 +63,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.venues.count;
+    return self.tableData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,7 +71,8 @@
     static NSString *CellIdentifier = @"VenueCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.venues objectAtIndex:indexPath.row];
+    NSDictionary *venue = [self.tableData objectAtIndex:indexPath.row];
+    cell.textLabel.text = [venue objectForKey:@"name"];
     
     return cell;
 }

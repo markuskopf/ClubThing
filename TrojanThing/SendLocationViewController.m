@@ -10,6 +10,7 @@
 #import "AFHTTPRequestOperation.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "AppDelegate.h"
+#import "VenueTableViewController.h"
 
 @interface SendLocationViewController ()
 
@@ -18,6 +19,9 @@
 @property (strong, nonatomic) CLLocation *sendLocation;
 @property (weak, nonatomic) IBOutlet UIButton *sendLocationButton;
 
+@property (strong, nonatomic) NSDictionary *venueListDict;
+
+@property (weak, nonatomic) IBOutlet UIButton *showVenueButton;
 @end
 
 @implementation SendLocationViewController
@@ -48,10 +52,9 @@
     [self.locationManager startUpdatingLocation];
     
     _appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
-    
-    
-    _sendLocationButton.alpha = 0.0;
-    
+
+    _sendLocationButton.alpha = 0.0f;
+    _showVenueButton.alpha = 0.0f;
     
 	// Do any additional setup after loading the view.
 }
@@ -81,7 +84,24 @@
     
     [manager GET:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
-        // get back data for
+        
+        @try {
+            self.venueListDict = (NSDictionary*)responseObject;
+            
+            if (self.venueListDict.count>0) {
+                [UIView animateWithDuration:2.0f animations:^{
+                    self.showVenueButton.alpha = 1.0f;
+                }];
+            }
+            
+        }
+        @catch (NSException *exception) {
+            NSLog(@"ERROR: %@", exception.description);
+        }
+        @finally {
+            // do nothing
+        }
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
@@ -128,6 +148,16 @@
 
 - (void)setPlaceCacheDescriptorForCoordinates:(CLLocationCoordinate2D)coordinates {
     NSLog(@"");
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"venues_segue"])
+	{
+		VenueTableViewController *venueTableViewController = segue.destinationViewController;
+        venueTableViewController.venues = self.venueListDict;
+        
+	}
 }
 
 @end

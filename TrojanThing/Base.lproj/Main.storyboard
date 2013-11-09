@@ -71,7 +71,16 @@
                                 </state>
                                 <connections>
                                     <action selector="sendLocationToServer:" destination="o3X-7O-WDt" eventType="touchUpInside" id="os1-om-Hla"/>
-                                    <segue destination="3ml-kb-HrZ" kind="push" identifier="venues_segue" id="xjG-4e-lxl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-eP-gFF">
+                                <rect key="frame" x="0.0" y="383" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Venues">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3ml-kb-HrZ" kind="push" identifier="venues_segue" id="rxj-SC-QGR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,6 +93,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="sendLocationButton" destination="LxF-ky-iNi" id="c6b-GI-ce7"/>
+                        <outlet property="showVenueButton" destination="IIu-eP-gFF" id="ufw-ZN-c4e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJr-6Y-REE" userLabel="First Responder" sceneMemberID="firstResponder"/>

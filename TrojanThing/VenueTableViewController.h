@@ -10,6 +10,6 @@
 
 @interface VenueTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *venues;
+@property (nonatomic, strong) NSDictionary *venues;
 
 @end
