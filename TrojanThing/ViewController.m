@@ -68,6 +68,7 @@
     
     // Initialize a session object
     FBSession *session = [[FBSession alloc] init];
+    
     // Set the active session
     [FBSession setActiveSession:session];
     // Open the session
@@ -82,7 +83,8 @@
                 manager.requestSerializer = [AFJSONRequestSerializer serializer];
                 manager.responseSerializer = [AFJSONResponseSerializer serializer];
                 
-                NSString *URLString = @"http://91.250.113.33:3000/api/login";
+                
+                NSString *URLString = [NSString stringWithFormat:@"%@api/v1/login", kBaseURL];  //@"http://91.250.113.33:3000/api/login";
                 NSDictionary *parameters;
                 @try {
                     parameters = @{@"facebookAccessToken": accessToken};
@@ -97,7 +99,7 @@
             
                 [manager POST:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
                     NSLog(@"JSON: %@", responseObject);
-                    self.appDelegate.userID = [responseObject objectForKey:@"userId"];
+                    self.appDelegate.accessToken = [responseObject objectForKey:@"accessToken"];
                 } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                     NSLog(@"Error: %@", error);
                 }];

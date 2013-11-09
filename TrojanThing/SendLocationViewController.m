@@ -35,6 +35,8 @@
 {
     [super viewDidLoad];
     
+    self.appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
     // Get the CLLocationManager going.
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
@@ -64,23 +66,26 @@
 - (IBAction)sendLocationToServer:(id)sender {
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     
-    NSString *URLString = @"http://91.250.113.33:3000/api/login";
     
-    NSDictionary *parameters = @{@"userId": self.appDelegate.userID,
-                                 @"lon" : [NSString stringWithFormat:@"%lf", self.sendLocation.coordinate.longitude],
-                                 @"lat" : [NSString stringWithFormat:@"%lf", self.sendLocation.coordinate.latitude]};
+    //http://localhost:8081/api/v1/venue/search?latitude=52.510631777318089064&longitude=13.41876983642578125
     
-    [manager POST:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    NSString *URLString = [NSString stringWithFormat:@"%@%@", kBaseURL, @"api/v1/venue/search?"];
+
+    
+    //@"accessToken": self.appDelegate.accessToken,
+    
+    NSDictionary *parameters = @{@"longitude" : [NSString stringWithFormat:@"%lf", self.sendLocation.coordinate.longitude],
+                                 @"latitude" : [NSString stringWithFormat:@"%lf", self.sendLocation.coordinate.latitude]};
+    
+    [manager GET:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
         // get back data for
-        
-        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
+
 }
 
 

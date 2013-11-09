@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		151386DF061641C5A2F78ABC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7BDA220354B9FAA85BBD4 /* libPods.a */; };
+		75720730182E84240050A28D /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7572072F182E84240050A28D /* AppIcon.png */; };
+		75720733182E959C0050A28D /* VenueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75720732182E959C0050A28D /* VenueTableViewController.m */; };
 		7582E1FB181C04A6005E5B8D /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7582E1FA181C04A6005E5B8D /* facebook.png */; };
 		7582E1FF181C060C005E5B8D /* SendLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7582E1FE181C060C005E5B8D /* SendLocationViewController.m */; };
 		75902482181C3537004E01C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75902481181C3537004E01C4 /* CoreLocation.framework */; };
@@ -42,6 +44,9 @@
 /* Begin PBXFileReference section */
 		09A872D60D834667B04629E7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		18C7BDA220354B9FAA85BBD4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7572072F182E84240050A28D /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		75720731182E959C0050A28D /* VenueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewController.h; sourceTree = "<group>"; };
+		75720732182E959C0050A28D /* VenueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewController.m; sourceTree = "<group>"; };
 		7582E1FA181C04A6005E5B8D /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		7582E1FD181C060C005E5B8D /* SendLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendLocationViewController.h; sourceTree = "<group>"; };
 		7582E1FE181C060C005E5B8D /* SendLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendLocationViewController.m; sourceTree = "<group>"; };
@@ -100,6 +105,7 @@
 		7582E1FC181C04AD005E5B8D /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				7572072F182E84240050A28D /* AppIcon.png */,
 				7582E1FA181C04A6005E5B8D /* facebook.png */,
 			);
 			name = Ressources;
@@ -150,6 +156,8 @@
 				75C2E7BA181BDE3100A324E8 /* ViewController.m */,
 				7582E1FD181C060C005E5B8D /* SendLocationViewController.h */,
 				7582E1FE181C060C005E5B8D /* SendLocationViewController.m */,
+				75720731182E959C0050A28D /* VenueTableViewController.h */,
+				75720732182E959C0050A28D /* VenueTableViewController.m */,
 				75F0D2B6181BEF7C007F3A6B /* CrunchedDataTableViewViewController.h */,
 				75F0D2B7181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m */,
 				75C2E7BC181BDE3100A324E8 /* Images.xcassets */,
@@ -265,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75720730182E84240050A28D /* AppIcon.png in Resources */,
 				75C2E7BD181BDE3100A324E8 /* Images.xcassets in Resources */,
 				7582E1FB181C04A6005E5B8D /* facebook.png in Resources */,
 				75C2E7AF181BDE3100A324E8 /* InfoPlist.strings in Resources */,
@@ -325,6 +334,7 @@
 				75C2E7BB181BDE3100A324E8 /* ViewController.m in Sources */,
 				75C2E7B5181BDE3100A324E8 /* AppDelegate.m in Sources */,
 				75C2E7B1181BDE3100A324E8 /* main.m in Sources */,
+				75720733182E959C0050A28D /* VenueTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +460,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +478,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
