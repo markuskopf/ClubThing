@@ -24,6 +24,8 @@
 @property (strong, nonatomic) NSDictionary *venueListDict;
 
 @property (weak, nonatomic) IBOutlet UIButton *showVenueButton;
+@property (weak, nonatomic) IBOutlet UIView *venueContainerView;
+@property (weak, nonatomic) IBOutlet UIView *locationContainerView;
 
 @end
 
@@ -56,6 +58,8 @@
     
     _appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
 
+    _venueContainerView.alpha = 0.0f;
+    _locationContainerView.alpha = 0.0f;
     _sendLocationButton.alpha = 0.0f;
     _showVenueButton.alpha = 0.0f;
     
@@ -92,6 +96,7 @@
             
             if (self.venueListDict.count>0) {
                 [UIView animateWithDuration:2.0f animations:^{
+                    self.venueContainerView.alpha = 1.0f;
                     self.showVenueButton.alpha = 1.0f;
                 }];
             }
@@ -147,6 +152,7 @@
                 
                 
                 [UIView animateWithDuration:2.0 animations:^{
+                    self.locationContainerView.alpha = 1.0f;
                     self.sendLocationButton.alpha = 1.0;
                 }];
             }
