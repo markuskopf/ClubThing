@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		151386DF061641C5A2F78ABC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7BDA220354B9FAA85BBD4 /* libPods.a */; };
+		751224CF182EBBD700F040A6 /* berlin_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 751224CE182EBBD700F040A6 /* berlin_night.png */; };
 		75720730182E84240050A28D /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7572072F182E84240050A28D /* AppIcon.png */; };
 		75720733182E959C0050A28D /* VenueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75720732182E959C0050A28D /* VenueTableViewController.m */; };
 		7582E1FB181C04A6005E5B8D /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7582E1FA181C04A6005E5B8D /* facebook.png */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		09A872D60D834667B04629E7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		18C7BDA220354B9FAA85BBD4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		751224CE182EBBD700F040A6 /* berlin_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = berlin_night.png; sourceTree = "<group>"; };
 		7572072F182E84240050A28D /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		75720731182E959C0050A28D /* VenueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewController.h; sourceTree = "<group>"; };
 		75720732182E959C0050A28D /* VenueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewController.m; sourceTree = "<group>"; };
@@ -102,9 +104,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		751224CD182EBBB500F040A6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				751224CE182EBBD700F040A6 /* berlin_night.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		7582E1FC181C04AD005E5B8D /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				751224CD182EBBB500F040A6 /* Images */,
 				7572072F182E84240050A28D /* AppIcon.png */,
 				7582E1FA181C04A6005E5B8D /* facebook.png */,
 			);
@@ -273,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751224CF182EBBD700F040A6 /* berlin_night.png in Resources */,
 				75720730182E84240050A28D /* AppIcon.png in Resources */,
 				75C2E7BD181BDE3100A324E8 /* Images.xcassets in Resources */,
 				7582E1FB181C04A6005E5B8D /* facebook.png in Resources */,
