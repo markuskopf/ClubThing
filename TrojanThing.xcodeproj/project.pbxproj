@@ -31,6 +31,7 @@
 		75C2E7C6181BDE3100A324E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A8181BDE3100A324E8 /* UIKit.framework */; };
 		75C2E7CE181BDE3100A324E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7CC181BDE3100A324E8 /* InfoPlist.strings */; };
 		75C2E7D0181BDE3100A324E8 /* TrojanThingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */; };
+		75DCDA68182EDFA90046CDCF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DCDA67182EDFA90046CDCF /* libz.dylib */; };
 		75F0D2B8181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F0D2B7181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m */; };
 		75F0D2BA181BF64D007F3A6B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		75C2E7CB181BDE3100A324E8 /* TrojanThingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrojanThingTests-Info.plist"; sourceTree = "<group>"; };
 		75C2E7CD181BDE3100A324E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrojanThingTests.m; sourceTree = "<group>"; };
+		75DCDA67182EDFA90046CDCF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		75F0D2B6181BEF7C007F3A6B /* CrunchedDataTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchedDataTableViewViewController.h; sourceTree = "<group>"; };
 		75F0D2B7181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchedDataTableViewViewController.m; sourceTree = "<group>"; };
 		75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -91,10 +93,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DCDA68182EDFA90046CDCF /* libz.dylib in Frameworks */,
 				75902482181C3537004E01C4 /* CoreLocation.framework in Frameworks */,
-				7536B3DE182EDEA800AC5A0B /* libTestFlight.a in Frameworks */,
 				75C2E7A7181BDE3100A324E8 /* CoreGraphics.framework in Frameworks */,
 				75F0D2BA181BF64D007F3A6B /* FacebookSDK.framework in Frameworks */,
+				7536B3DE182EDEA800AC5A0B /* libTestFlight.a in Frameworks */,
 				75C2E7A9181BDE3100A324E8 /* UIKit.framework in Frameworks */,
 				75C2E7A5181BDE3100A324E8 /* Foundation.framework in Frameworks */,
 				151386DF061641C5A2F78ABC /* libPods.a in Frameworks */,
@@ -176,6 +179,7 @@
 		75C2E7A3181BDE3100A324E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75DCDA67182EDFA90046CDCF /* libz.dylib */,
 				75902481181C3537004E01C4 /* CoreLocation.framework */,
 				75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */,
 				75C2E7A4181BDE3100A324E8 /* Foundation.framework */,
