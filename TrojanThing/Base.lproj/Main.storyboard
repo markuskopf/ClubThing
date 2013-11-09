@@ -43,7 +43,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="facebookLoginPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HPs-oU-oTP"/>
-                                                    <segue destination="o3X-7O-WDt" kind="push" identifier="location_segue" id="Iyy-u0-dMW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -56,59 +55,58 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Club-Thing" id="Kbt-C4-hID"/>
+                    <connections>
+                        <segue destination="fmT-2T-Igg" kind="push" identifier="location_segue" id="knu-Kl-CXV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="619" y="46"/>
         </scene>
-        <!--Send Location View Controller - Location-->
-        <scene sceneID="Fhz-1P-Q6A">
+        <!--Send Location View Controller - Where are you?-->
+        <scene sceneID="OCK-SE-qNa">
             <objects>
-                <viewController id="o3X-7O-WDt" customClass="SendLocationViewController" sceneMemberID="viewController">
+                <viewController id="fmT-2T-Igg" customClass="SendLocationViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8gW-cr-VgK"/>
-                        <viewControllerLayoutGuide type="bottom" id="i7m-Ob-29X"/>
+                        <viewControllerLayoutGuide type="top" id="ehG-Nj-R92"/>
+                        <viewControllerLayoutGuide type="bottom" id="OpV-du-iaL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="USx-Rc-69P">
+                    <view key="view" contentMode="scaleToFill" id="l3b-aa-AYK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxF-ky-iNi">
-                                <rect key="frame" x="0.0" y="257" width="325" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYe-WS-s9R">
+                                <rect key="frame" x="-7" y="185" width="325" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send my Lcoation">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendLocationToServer:" destination="o3X-7O-WDt" eventType="touchUpInside" id="os1-om-Hla"/>
+                                    <action selector="sendLocationToServer:" destination="fmT-2T-Igg" eventType="touchUpInside" id="feS-0i-Epx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-eP-gFF">
-                                <rect key="frame" x="0.0" y="383" width="320" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evy-HJ-m3q">
+                                <rect key="frame" x="-20" y="311" width="320" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Show Venues">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3ml-kb-HrZ" kind="push" identifier="venues_segue" id="rxj-SC-QGR"/>
+                                    <segue destination="3ml-kb-HrZ" kind="push" identifier="venues_segue" id="r62-ix-Uuq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Location" id="kyk-wM-lXq">
-                        <connections>
-                            <outlet property="titleView" destination="USx-Rc-69P" id="hog-mi-Pp9"/>
-                        </connections>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Where are you?" id="9Ki-Sn-iz0"/>
                     <connections>
-                        <outlet property="sendLocationButton" destination="LxF-ky-iNi" id="c6b-GI-ce7"/>
-                        <outlet property="showVenueButton" destination="IIu-eP-gFF" id="ufw-ZN-c4e"/>
+                        <outlet property="sendLocationButton" destination="eYe-WS-s9R" id="amw-e4-ud8"/>
+                        <outlet property="showVenueButton" destination="evy-HJ-m3q" id="2V9-Kz-xae"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TJr-6Y-REE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AZd-nO-Syn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="46"/>
+            <point key="canvasLocation" x="1170" y="46"/>
         </scene>
         <!--Venue Table View Controller - Venues-->
         <scene sceneID="wTF-eG-Xfw">
@@ -147,7 +145,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xb9-LJ-M3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1486" y="46"/>
+            <point key="canvasLocation" x="1732" y="46"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PLq-P9-28z">

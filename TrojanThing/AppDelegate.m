@@ -132,7 +132,7 @@
                           completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
                               // Forward any errors to the FBLoginView delegate.
                               if (error) {
-                                  [self.viewController loginView:nil handleError:error];
+                                  [self.viewController facebookLogIn:status handleError:error];
                               }
                           }];
 }

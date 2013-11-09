@@ -9,11 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
 
-@interface LandingViewController : UIViewController<FBLoginViewDelegate>
+@interface LandingViewController : UIViewController
 
-@property (unsafe_unretained, nonatomic) IBOutlet FBLoginView *FBLoginView;
 
-- (void)loginView:(FBLoginView *)loginView handleError:(NSError *)error;
+-(void)facebookLogIn:(FBSessionState)status handleError:(NSError *)error;
 
 
 @end
