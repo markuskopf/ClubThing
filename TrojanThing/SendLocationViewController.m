@@ -14,14 +14,17 @@
 
 @interface SendLocationViewController ()
 
+// location manager
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) AppDelegate *appDelegate;
 @property (strong, nonatomic) CLLocation *sendLocation;
 @property (weak, nonatomic) IBOutlet UIButton *sendLocationButton;
 
+// data response
 @property (strong, nonatomic) NSDictionary *venueListDict;
 
 @property (weak, nonatomic) IBOutlet UIButton *showVenueButton;
+
 @end
 
 @implementation SendLocationViewController
@@ -107,6 +110,16 @@
 
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"venues_segue"])
+	{
+		VenueTableViewController *venueTableViewController = segue.destinationViewController;
+        venueTableViewController.venues = self.venueListDict;
+        
+	}
+}
+
 
 #pragma mark - CLLocationManagerDelegate methods and related
 
@@ -147,16 +160,6 @@
 
 - (void)setPlaceCacheDescriptorForCoordinates:(CLLocationCoordinate2D)coordinates {
     NSLog(@"");
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-	if ([segue.identifier isEqualToString:@"venues_segue"])
-	{
-		VenueTableViewController *venueTableViewController = segue.destinationViewController;
-        venueTableViewController.venues = self.venueListDict;
-        
-	}
 }
 
 @end
