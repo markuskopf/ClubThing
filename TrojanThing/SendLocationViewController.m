@@ -56,6 +56,8 @@
     _sendLocationButton.alpha = 0.0f;
     _showVenueButton.alpha = 0.0f;
     
+    self.navigationItem.hidesBackButton = YES;
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -70,9 +72,6 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    
-    
-    //http://localhost:8081/api/v1/venue/search?latitude=52.510631777318089064&longitude=13.41876983642578125
     
     NSString *URLString = [NSString stringWithFormat:@"%@%@", kBaseURL, @"api/v1/venue/search?"];
 
