@@ -1,3 +1,7 @@
+## 2.1
+
+- iPhone 5s 64bit support. The SDK includes support for iOS 4.3 and up and arm64.
+
 ## 2.0.2
 
 - Fixed a bug where the sdk would cause an app's CPU usage to rise significantly if the device had no internet connection when the app started
