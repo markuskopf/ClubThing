@@ -29,12 +29,7 @@
     [TestFlight takeOff:@"0186dc83-9ee3-4187-bacc-9a4df1871f26"];
     // The rest of your application:didFinishLaunchingWithOptions method// ...
 
-    
-    // start of your application:didFinishLaunchingWithOptions // ...
-    [TestFlight takeOff:@"0186dc83-9ee3-4187-bacc-9a4df1871f26"];
-    // The rest of your application:didFinishLaunchingWithOptions method// ...
 
-    
     return YES;
 }
 							
