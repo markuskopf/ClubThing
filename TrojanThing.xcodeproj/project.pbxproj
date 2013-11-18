@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		151386DF061641C5A2F78ABC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7BDA220354B9FAA85BBD4 /* libPods.a */; };
 		751224CF182EBBD700F040A6 /* berlin_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 751224CE182EBBD700F040A6 /* berlin_night.png */; };
-		75720730182E84240050A28D /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7572072F182E84240050A28D /* AppIcon.png */; };
 		75720733182E959C0050A28D /* VenueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75720732182E959C0050A28D /* VenueTableViewController.m */; };
 		7582E1FB181C04A6005E5B8D /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7582E1FA181C04A6005E5B8D /* facebook.png */; };
 		7582E1FF181C060C005E5B8D /* SendLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7582E1FE181C060C005E5B8D /* SendLocationViewController.m */; };
@@ -28,6 +27,11 @@
 		75C2E7C6181BDE3100A324E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A8181BDE3100A324E8 /* UIKit.framework */; };
 		75C2E7CE181BDE3100A324E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7CC181BDE3100A324E8 /* InfoPlist.strings */; };
 		75C2E7D0181BDE3100A324E8 /* TrojanThingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */; };
+		75E4CBF5183AC6B100CA1DDC /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E4CBEF183AC6B100CA1DDC /* libTestFlight.a */; };
+		75E4CBF6183AC6B100CA1DDC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 75E4CBF0183AC6B100CA1DDC /* README.md */; };
+		75E4CBF7183AC6B100CA1DDC /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 75E4CBF1183AC6B100CA1DDC /* release_notes.md */; };
+		75E4CBF9183AC6BC00CA1DDC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E4CBF8183AC6BC00CA1DDC /* libz.dylib */; };
+		75E4CBFB183AC72300CA1DDC /* AppIcon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E4CBFA183AC72300CA1DDC /* AppIcon_120x120.png */; };
 		75F0D2B8181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F0D2B7181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m */; };
 		75F0D2BA181BF64D007F3A6B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
@@ -46,7 +50,6 @@
 		09A872D60D834667B04629E7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		18C7BDA220354B9FAA85BBD4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		751224CE182EBBD700F040A6 /* berlin_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = berlin_night.png; sourceTree = "<group>"; };
-		7572072F182E84240050A28D /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		75720731182E959C0050A28D /* VenueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewController.h; sourceTree = "<group>"; };
 		75720732182E959C0050A28D /* VenueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewController.m; sourceTree = "<group>"; };
 		7582E1FA181C04A6005E5B8D /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
@@ -72,6 +75,14 @@
 		75C2E7CB181BDE3100A324E8 /* TrojanThingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrojanThingTests-Info.plist"; sourceTree = "<group>"; };
 		75C2E7CD181BDE3100A324E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrojanThingTests.m; sourceTree = "<group>"; };
+		75E4CBEF183AC6B100CA1DDC /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		75E4CBF0183AC6B100CA1DDC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		75E4CBF1183AC6B100CA1DDC /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		75E4CBF2183AC6B100CA1DDC /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		75E4CBF3183AC6B100CA1DDC /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		75E4CBF4183AC6B100CA1DDC /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		75E4CBF8183AC6BC00CA1DDC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		75E4CBFA183AC72300CA1DDC /* AppIcon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon_120x120.png; sourceTree = "<group>"; };
 		75F0D2B6181BEF7C007F3A6B /* CrunchedDataTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchedDataTableViewViewController.h; sourceTree = "<group>"; };
 		75F0D2B7181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchedDataTableViewViewController.m; sourceTree = "<group>"; };
 		75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -82,7 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E4CBF9183AC6BC00CA1DDC /* libz.dylib in Frameworks */,
 				75902482181C3537004E01C4 /* CoreLocation.framework in Frameworks */,
+				75E4CBF5183AC6B100CA1DDC /* libTestFlight.a in Frameworks */,
 				75C2E7A7181BDE3100A324E8 /* CoreGraphics.framework in Frameworks */,
 				75F0D2BA181BF64D007F3A6B /* FacebookSDK.framework in Frameworks */,
 				75C2E7A9181BDE3100A324E8 /* UIKit.framework in Frameworks */,
@@ -107,6 +120,7 @@
 		751224CD182EBBB500F040A6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				75E4CBFA183AC72300CA1DDC /* AppIcon_120x120.png */,
 				751224CE182EBBD700F040A6 /* berlin_night.png */,
 			);
 			name = Images;
@@ -116,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				751224CD182EBBB500F040A6 /* Images */,
-				7572072F182E84240050A28D /* AppIcon.png */,
 				7582E1FA181C04A6005E5B8D /* facebook.png */,
 			);
 			name = Ressources;
@@ -145,6 +158,7 @@
 		75C2E7A3181BDE3100A324E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75E4CBF8183AC6BC00CA1DDC /* libz.dylib */,
 				75902481181C3537004E01C4 /* CoreLocation.framework */,
 				75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */,
 				75C2E7A4181BDE3100A324E8 /* Foundation.framework */,
@@ -159,6 +173,7 @@
 		75C2E7AA181BDE3100A324E8 /* TrojanThing */ = {
 			isa = PBXGroup;
 			children = (
+				75E4CBED183AC69000CA1DDC /* 3rd */,
 				7582E1FC181C04AD005E5B8D /* Ressources */,
 				75C2E7B3181BDE3100A324E8 /* AppDelegate.h */,
 				75C2E7B4181BDE3100A324E8 /* AppDelegate.m */,
@@ -204,6 +219,27 @@
 				75C2E7CC181BDE3100A324E8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75E4CBED183AC69000CA1DDC /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				75E4CBEE183AC69900CA1DDC /* Testflight */,
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+		75E4CBEE183AC69900CA1DDC /* Testflight */ = {
+			isa = PBXGroup;
+			children = (
+				75E4CBEF183AC6B100CA1DDC /* libTestFlight.a */,
+				75E4CBF0183AC6B100CA1DDC /* README.md */,
+				75E4CBF1183AC6B100CA1DDC /* release_notes.md */,
+				75E4CBF2183AC6B100CA1DDC /* TestFlight.h */,
+				75E4CBF3183AC6B100CA1DDC /* TestFlight+AsyncLogging.h */,
+				75E4CBF4183AC6B100CA1DDC /* TestFlight+ManualSessions.h */,
+			);
+			name = Testflight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,10 +320,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E4CBF7183AC6B100CA1DDC /* release_notes.md in Resources */,
 				751224CF182EBBD700F040A6 /* berlin_night.png in Resources */,
-				75720730182E84240050A28D /* AppIcon.png in Resources */,
 				75C2E7BD181BDE3100A324E8 /* Images.xcassets in Resources */,
+				75E4CBF6183AC6B100CA1DDC /* README.md in Resources */,
 				7582E1FB181C04A6005E5B8D /* facebook.png in Resources */,
+				75E4CBFB183AC72300CA1DDC /* AppIcon_120x120.png in Resources */,
 				75C2E7AF181BDE3100A324E8 /* InfoPlist.strings in Resources */,
 				75C2E7B8181BDE3100A324E8 /* Main.storyboard in Resources */,
 			);
@@ -480,6 +518,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
 				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
@@ -498,6 +540,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
 				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;

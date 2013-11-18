@@ -14,13 +14,14 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
+				<string>AppIcon_120x120</string>
 				<string>AppIcon</string>
 				<string>ClubThingAppIcon</string>
 			</array>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.techcrunch.hackathon.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.clubthing.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
