@@ -11,6 +11,7 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "AppDelegate.h"
 #import "VenueTableViewController.h"
+#import "VenuesMapViewController.h"
 
 @interface SendLocationViewController ()
 
@@ -122,7 +123,11 @@
 		VenueTableViewController *venueTableViewController = segue.destinationViewController;
         venueTableViewController.venues = self.venueListDict;
         
-	}
+	} else if ([segue.identifier isEqualToString:@"venues_map_segue"])
+    {
+        VenuesMapViewController *venuesMapVC = segue.destinationViewController;
+        venuesMapVC.venueListDict = self.venueListDict;
+    }
 }
 
 

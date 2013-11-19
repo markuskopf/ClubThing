@@ -27,6 +27,10 @@
 		75C2E7C6181BDE3100A324E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C2E7A8181BDE3100A324E8 /* UIKit.framework */; };
 		75C2E7CE181BDE3100A324E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E7CC181BDE3100A324E8 /* InfoPlist.strings */; };
 		75C2E7D0181BDE3100A324E8 /* TrojanThingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */; };
+		75C46BC4183BADE300C47915 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C46BC3183BADE300C47915 /* MapKit.framework */; };
+		75C46BC7183BAE7800C47915 /* VenuesMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C46BC6183BAE7800C47915 /* VenuesMapViewController.m */; };
+		75C46BCA183BBC5300C47915 /* VenueLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C46BC9183BBC5300C47915 /* VenueLocation.m */; };
+		75C46BCC183BC2D200C47915 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C46BCB183BC2D200C47915 /* AddressBook.framework */; };
 		75E4CBF5183AC6B100CA1DDC /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E4CBEF183AC6B100CA1DDC /* libTestFlight.a */; };
 		75E4CBF6183AC6B100CA1DDC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 75E4CBF0183AC6B100CA1DDC /* README.md */; };
 		75E4CBF7183AC6B100CA1DDC /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 75E4CBF1183AC6B100CA1DDC /* release_notes.md */; };
@@ -75,6 +79,12 @@
 		75C2E7CB181BDE3100A324E8 /* TrojanThingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrojanThingTests-Info.plist"; sourceTree = "<group>"; };
 		75C2E7CD181BDE3100A324E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75C2E7CF181BDE3100A324E8 /* TrojanThingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrojanThingTests.m; sourceTree = "<group>"; };
+		75C46BC3183BADE300C47915 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		75C46BC5183BAE7800C47915 /* VenuesMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesMapViewController.h; sourceTree = "<group>"; };
+		75C46BC6183BAE7800C47915 /* VenuesMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesMapViewController.m; sourceTree = "<group>"; };
+		75C46BC8183BBC5300C47915 /* VenueLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueLocation.h; sourceTree = "<group>"; };
+		75C46BC9183BBC5300C47915 /* VenueLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueLocation.m; sourceTree = "<group>"; };
+		75C46BCB183BC2D200C47915 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		75E4CBEF183AC6B100CA1DDC /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		75E4CBF0183AC6B100CA1DDC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		75E4CBF1183AC6B100CA1DDC /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
@@ -93,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C46BCC183BC2D200C47915 /* AddressBook.framework in Frameworks */,
+				75C46BC4183BADE300C47915 /* MapKit.framework in Frameworks */,
 				75E4CBF9183AC6BC00CA1DDC /* libz.dylib in Frameworks */,
 				75902482181C3537004E01C4 /* CoreLocation.framework in Frameworks */,
 				75E4CBF5183AC6B100CA1DDC /* libTestFlight.a in Frameworks */,
@@ -158,6 +170,8 @@
 		75C2E7A3181BDE3100A324E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75C46BCB183BC2D200C47915 /* AddressBook.framework */,
+				75C46BC3183BADE300C47915 /* MapKit.framework */,
 				75E4CBF8183AC6BC00CA1DDC /* libz.dylib */,
 				75902481181C3537004E01C4 /* CoreLocation.framework */,
 				75F0D2B9181BF64D007F3A6B /* FacebookSDK.framework */,
@@ -178,6 +192,10 @@
 				75C2E7B3181BDE3100A324E8 /* AppDelegate.h */,
 				75C2E7B4181BDE3100A324E8 /* AppDelegate.m */,
 				75C2E7B6181BDE3100A324E8 /* Main.storyboard */,
+				75C46BC5183BAE7800C47915 /* VenuesMapViewController.h */,
+				75C46BC6183BAE7800C47915 /* VenuesMapViewController.m */,
+				75C46BC8183BBC5300C47915 /* VenueLocation.h */,
+				75C46BC9183BBC5300C47915 /* VenueLocation.m */,
 				75C2E7B9181BDE3100A324E8 /* LandingViewController.h */,
 				75C2E7BA181BDE3100A324E8 /* LandingViewController.m */,
 				7582E1FD181C060C005E5B8D /* SendLocationViewController.h */,
@@ -385,6 +403,8 @@
 				75C2E7B5181BDE3100A324E8 /* AppDelegate.m in Sources */,
 				75C2E7B1181BDE3100A324E8 /* main.m in Sources */,
 				75720733182E959C0050A28D /* VenueTableViewController.m in Sources */,
+				75C46BCA183BBC5300C47915 /* VenueLocation.m in Sources */,
+				75C46BC7183BAE7800C47915 /* VenuesMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
