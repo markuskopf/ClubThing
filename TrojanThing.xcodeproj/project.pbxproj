@@ -31,6 +31,7 @@
 		75C46BC7183BAE7800C47915 /* VenuesMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C46BC6183BAE7800C47915 /* VenuesMapViewController.m */; };
 		75C46BCA183BBC5300C47915 /* VenueLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C46BC9183BBC5300C47915 /* VenueLocation.m */; };
 		75C46BCC183BC2D200C47915 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C46BCB183BC2D200C47915 /* AddressBook.framework */; };
+		75C46BCE183C08F900C47915 /* arrest.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C46BCD183C08F900C47915 /* arrest.png */; };
 		75E4CBF5183AC6B100CA1DDC /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E4CBEF183AC6B100CA1DDC /* libTestFlight.a */; };
 		75E4CBF6183AC6B100CA1DDC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 75E4CBF0183AC6B100CA1DDC /* README.md */; };
 		75E4CBF7183AC6B100CA1DDC /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 75E4CBF1183AC6B100CA1DDC /* release_notes.md */; };
@@ -85,6 +86,7 @@
 		75C46BC8183BBC5300C47915 /* VenueLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueLocation.h; sourceTree = "<group>"; };
 		75C46BC9183BBC5300C47915 /* VenueLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueLocation.m; sourceTree = "<group>"; };
 		75C46BCB183BC2D200C47915 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		75C46BCD183C08F900C47915 /* arrest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrest.png; sourceTree = "<group>"; };
 		75E4CBEF183AC6B100CA1DDC /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		75E4CBF0183AC6B100CA1DDC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		75E4CBF1183AC6B100CA1DDC /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		751224CD182EBBB500F040A6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				75C46BCD183C08F900C47915 /* arrest.png */,
 				75E4CBFA183AC72300CA1DDC /* AppIcon_120x120.png */,
 				751224CE182EBBD700F040A6 /* berlin_night.png */,
 			);
@@ -344,6 +347,7 @@
 				75E4CBF6183AC6B100CA1DDC /* README.md in Resources */,
 				7582E1FB181C04A6005E5B8D /* facebook.png in Resources */,
 				75E4CBFB183AC72300CA1DDC /* AppIcon_120x120.png in Resources */,
+				75C46BCE183C08F900C47915 /* arrest.png in Resources */,
 				75C2E7AF181BDE3100A324E8 /* InfoPlist.strings in Resources */,
 				75C2E7B8181BDE3100A324E8 /* Main.storyboard in Resources */,
 			);
