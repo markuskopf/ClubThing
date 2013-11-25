@@ -9,6 +9,27 @@
 /* Begin PBXBuildFile section */
 		151386DF061641C5A2F78ABC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7BDA220354B9FAA85BBD4 /* libPods.a */; };
 		751224CF182EBBD700F040A6 /* berlin_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 751224CE182EBBD700F040A6 /* berlin_night.png */; };
+		7535509D1843DA0E00D8E212 /* SFSCollectionMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7535509C1843DA0E00D8E212 /* SFSCollectionMenuController.m */; };
+		753550A11843E22700D8E212 /* SFSCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 753550A01843E22700D8E212 /* SFSCircleLayout.m */; };
+		753550B41843E23F00D8E212 /* closeButtonGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550A31843E23F00D8E212 /* closeButtonGray.png */; };
+		753550B51843E23F00D8E212 /* closeButtonGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550A41843E23F00D8E212 /* closeButtonGray@2x.png */; };
+		753550B61843E23F00D8E212 /* bgcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550A51843E23F00D8E212 /* bgcircle.png */; };
+		753550B71843E23F00D8E212 /* bgcircle.pxm in Resources */ = {isa = PBXBuildFile; fileRef = 753550A61843E23F00D8E212 /* bgcircle.pxm */; };
+		753550B81843E23F00D8E212 /* bgcircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550A71843E23F00D8E212 /* bgcircle@2x.png */; };
+		753550B91843E23F00D8E212 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550A81843E23F00D8E212 /* camera.png */; };
+		753550BA1843E23F00D8E212 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550A91843E23F00D8E212 /* camera@2x.png */; };
+		753550BB1843E23F00D8E212 /* chatBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550AA1843E23F00D8E212 /* chatBubble.png */; };
+		753550BC1843E23F00D8E212 /* chatBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550AB1843E23F00D8E212 /* chatBubble@2x.png */; };
+		753550BD1843E23F00D8E212 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550AC1843E23F00D8E212 /* phone.png */; };
+		753550BE1843E23F00D8E212 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550AD1843E23F00D8E212 /* phone@2x.png */; };
+		753550BF1843E23F00D8E212 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550AE1843E23F00D8E212 /* star.png */; };
+		753550C01843E23F00D8E212 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550AF1843E23F00D8E212 /* star@2x.png */; };
+		753550C11843E23F00D8E212 /* tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550B01843E23F00D8E212 /* tag.png */; };
+		753550C21843E23F00D8E212 /* tag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550B11843E23F00D8E212 /* tag@2x.png */; };
+		753550C31843E23F00D8E212 /* voicemail.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550B21843E23F00D8E212 /* voicemail.png */; };
+		753550C41843E23F00D8E212 /* voicemail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 753550B31843E23F00D8E212 /* voicemail@2x.png */; };
+		753550C81843E26200D8E212 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 753550C71843E26200D8E212 /* UIImage+ImageEffects.m */; };
+		753550CC1843E33F00D8E212 /* SFSMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 753550CB1843E33F00D8E212 /* SFSMenuCell.m */; };
 		75720733182E959C0050A28D /* VenueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75720732182E959C0050A28D /* VenueTableViewController.m */; };
 		7582E1FB181C04A6005E5B8D /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7582E1FA181C04A6005E5B8D /* facebook.png */; };
 		7582E1FF181C060C005E5B8D /* SendLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7582E1FE181C060C005E5B8D /* SendLocationViewController.m */; };
@@ -55,6 +76,31 @@
 		09A872D60D834667B04629E7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		18C7BDA220354B9FAA85BBD4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		751224CE182EBBD700F040A6 /* berlin_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = berlin_night.png; sourceTree = "<group>"; };
+		7535509B1843DA0E00D8E212 /* SFSCollectionMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSCollectionMenuController.h; sourceTree = "<group>"; };
+		7535509C1843DA0E00D8E212 /* SFSCollectionMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSCollectionMenuController.m; sourceTree = "<group>"; };
+		7535509F1843E22700D8E212 /* SFSCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSCircleLayout.h; sourceTree = "<group>"; };
+		753550A01843E22700D8E212 /* SFSCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSCircleLayout.m; sourceTree = "<group>"; };
+		753550A31843E23F00D8E212 /* closeButtonGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButtonGray.png; sourceTree = "<group>"; };
+		753550A41843E23F00D8E212 /* closeButtonGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeButtonGray@2x.png"; sourceTree = "<group>"; };
+		753550A51843E23F00D8E212 /* bgcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgcircle.png; sourceTree = "<group>"; };
+		753550A61843E23F00D8E212 /* bgcircle.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = bgcircle.pxm; sourceTree = "<group>"; };
+		753550A71843E23F00D8E212 /* bgcircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgcircle@2x.png"; sourceTree = "<group>"; };
+		753550A81843E23F00D8E212 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		753550A91843E23F00D8E212 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		753550AA1843E23F00D8E212 /* chatBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatBubble.png; sourceTree = "<group>"; };
+		753550AB1843E23F00D8E212 /* chatBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBubble@2x.png"; sourceTree = "<group>"; };
+		753550AC1843E23F00D8E212 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		753550AD1843E23F00D8E212 /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
+		753550AE1843E23F00D8E212 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		753550AF1843E23F00D8E212 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		753550B01843E23F00D8E212 /* tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tag.png; sourceTree = "<group>"; };
+		753550B11843E23F00D8E212 /* tag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tag@2x.png"; sourceTree = "<group>"; };
+		753550B21843E23F00D8E212 /* voicemail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voicemail.png; sourceTree = "<group>"; };
+		753550B31843E23F00D8E212 /* voicemail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voicemail@2x.png"; sourceTree = "<group>"; };
+		753550C61843E26200D8E212 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		753550C71843E26200D8E212 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		753550CA1843E33F00D8E212 /* SFSMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSMenuCell.h; sourceTree = "<group>"; };
+		753550CB1843E33F00D8E212 /* SFSMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSMenuCell.m; sourceTree = "<group>"; };
 		75720731182E959C0050A28D /* VenueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewController.h; sourceTree = "<group>"; };
 		75720732182E959C0050A28D /* VenueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewController.m; sourceTree = "<group>"; };
 		7582E1FA181C04A6005E5B8D /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
@@ -139,6 +185,70 @@
 				751224CE182EBBD700F040A6 /* berlin_night.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		7535509A1843D9FE00D8E212 /* CollectionMenu */ = {
+			isa = PBXGroup;
+			children = (
+				753550C91843E33400D8E212 /* Cell */,
+				753550C51843E24800D8E212 /* UIImage+ImageEffects */,
+				753550A21843E22F00D8E212 /* Images */,
+				7535509E1843E21C00D8E212 /* Layout */,
+				7535509B1843DA0E00D8E212 /* SFSCollectionMenuController.h */,
+				7535509C1843DA0E00D8E212 /* SFSCollectionMenuController.m */,
+			);
+			name = CollectionMenu;
+			sourceTree = "<group>";
+		};
+		7535509E1843E21C00D8E212 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				7535509F1843E22700D8E212 /* SFSCircleLayout.h */,
+				753550A01843E22700D8E212 /* SFSCircleLayout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		753550A21843E22F00D8E212 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				753550A31843E23F00D8E212 /* closeButtonGray.png */,
+				753550A41843E23F00D8E212 /* closeButtonGray@2x.png */,
+				753550A51843E23F00D8E212 /* bgcircle.png */,
+				753550A61843E23F00D8E212 /* bgcircle.pxm */,
+				753550A71843E23F00D8E212 /* bgcircle@2x.png */,
+				753550A81843E23F00D8E212 /* camera.png */,
+				753550A91843E23F00D8E212 /* camera@2x.png */,
+				753550AA1843E23F00D8E212 /* chatBubble.png */,
+				753550AB1843E23F00D8E212 /* chatBubble@2x.png */,
+				753550AC1843E23F00D8E212 /* phone.png */,
+				753550AD1843E23F00D8E212 /* phone@2x.png */,
+				753550AE1843E23F00D8E212 /* star.png */,
+				753550AF1843E23F00D8E212 /* star@2x.png */,
+				753550B01843E23F00D8E212 /* tag.png */,
+				753550B11843E23F00D8E212 /* tag@2x.png */,
+				753550B21843E23F00D8E212 /* voicemail.png */,
+				753550B31843E23F00D8E212 /* voicemail@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		753550C51843E24800D8E212 /* UIImage+ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				753550C61843E26200D8E212 /* UIImage+ImageEffects.h */,
+				753550C71843E26200D8E212 /* UIImage+ImageEffects.m */,
+			);
+			name = "UIImage+ImageEffects";
+			sourceTree = "<group>";
+		};
+		753550C91843E33400D8E212 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				753550CA1843E33F00D8E212 /* SFSMenuCell.h */,
+				753550CB1843E33F00D8E212 /* SFSMenuCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		7582E1FC181C04AD005E5B8D /* Ressources */ = {
@@ -245,6 +355,7 @@
 		75E4CBED183AC69000CA1DDC /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				7535509A1843D9FE00D8E212 /* CollectionMenu */,
 				75E4CBEE183AC69900CA1DDC /* Testflight */,
 			);
 			name = 3rd;
@@ -341,14 +452,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753550C01843E23F00D8E212 /* star@2x.png in Resources */,
+				753550B71843E23F00D8E212 /* bgcircle.pxm in Resources */,
 				75E4CBF7183AC6B100CA1DDC /* release_notes.md in Resources */,
+				753550BC1843E23F00D8E212 /* chatBubble@2x.png in Resources */,
 				751224CF182EBBD700F040A6 /* berlin_night.png in Resources */,
+				753550BB1843E23F00D8E212 /* chatBubble.png in Resources */,
+				753550BA1843E23F00D8E212 /* camera@2x.png in Resources */,
 				75C2E7BD181BDE3100A324E8 /* Images.xcassets in Resources */,
+				753550BE1843E23F00D8E212 /* phone@2x.png in Resources */,
+				753550B91843E23F00D8E212 /* camera.png in Resources */,
 				75E4CBF6183AC6B100CA1DDC /* README.md in Resources */,
 				7582E1FB181C04A6005E5B8D /* facebook.png in Resources */,
+				753550BF1843E23F00D8E212 /* star.png in Resources */,
+				753550B51843E23F00D8E212 /* closeButtonGray@2x.png in Resources */,
+				753550C31843E23F00D8E212 /* voicemail.png in Resources */,
+				753550B41843E23F00D8E212 /* closeButtonGray.png in Resources */,
 				75E4CBFB183AC72300CA1DDC /* AppIcon_120x120.png in Resources */,
+				753550BD1843E23F00D8E212 /* phone.png in Resources */,
 				75C46BCE183C08F900C47915 /* arrest.png in Resources */,
 				75C2E7AF181BDE3100A324E8 /* InfoPlist.strings in Resources */,
+				753550C21843E23F00D8E212 /* tag@2x.png in Resources */,
+				753550B81843E23F00D8E212 /* bgcircle@2x.png in Resources */,
+				753550C11843E23F00D8E212 /* tag.png in Resources */,
+				753550B61843E23F00D8E212 /* bgcircle.png in Resources */,
+				753550C41843E23F00D8E212 /* voicemail@2x.png in Resources */,
 				75C2E7B8181BDE3100A324E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,9 +529,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7535509D1843DA0E00D8E212 /* SFSCollectionMenuController.m in Sources */,
+				753550CC1843E33F00D8E212 /* SFSMenuCell.m in Sources */,
 				7582E1FF181C060C005E5B8D /* SendLocationViewController.m in Sources */,
 				75F0D2B8181BEF7C007F3A6B /* CrunchedDataTableViewViewController.m in Sources */,
 				75C2E7BB181BDE3100A324E8 /* LandingViewController.m in Sources */,
+				753550C81843E26200D8E212 /* UIImage+ImageEffects.m in Sources */,
+				753550A11843E22700D8E212 /* SFSCircleLayout.m in Sources */,
 				75C2E7B5181BDE3100A324E8 /* AppDelegate.m in Sources */,
 				75C2E7B1181BDE3100A324E8 /* main.m in Sources */,
 				75720733182E959C0050A28D /* VenueTableViewController.m in Sources */,
@@ -557,6 +689,7 @@
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/markuskopf/Documents/FacebookSDK,

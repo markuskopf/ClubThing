@@ -124,12 +124,23 @@
                                     <segue destination="phN-7q-QjX" kind="push" identifier="venues_map_segue" id="bEH-uG-evu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mws-C2-aD2">
+                                <rect key="frame" x="137" y="287" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedMenuButton:" destination="fmT-2T-Igg" eventType="touchUpInside" id="JOm-G3-diu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Where are you?" id="9Ki-Sn-iz0"/>
                     <connections>
                         <outlet property="locationContainerView" destination="oEi-sO-EDV" id="Kn4-f1-tfm"/>
+                        <outlet property="menuButton" destination="mws-C2-aD2" id="u4Z-gg-VU8"/>
                         <outlet property="sendLocationButton" destination="eYe-WS-s9R" id="amw-e4-ud8"/>
                         <outlet property="showVenueButton" destination="evy-HJ-m3q" id="2V9-Kz-xae"/>
                         <outlet property="venueContainerView" destination="rvf-OA-zVE" id="xOy-kZ-WPm"/>

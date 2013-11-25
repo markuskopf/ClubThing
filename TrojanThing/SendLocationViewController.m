@@ -28,6 +28,10 @@
 @property (weak, nonatomic) IBOutlet UIView *venueContainerView;
 @property (weak, nonatomic) IBOutlet UIView *locationContainerView;
 
+// menu button
+@property (weak, nonatomic) IBOutlet UIButton *menuButton;
+@property (nonatomic, strong) SFSCollectionMenuController *collectionMenu;
+
 @end
 
 @implementation SendLocationViewController
@@ -75,6 +79,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pressedMenuButton:(id)sender {
+    
+    if (!_collectionMenu) {
+        _collectionMenu = [[SFSCollectionMenuController alloc] initWithDelegate:self];
+    }
+    [self.collectionMenu showMenuWithLightEffect:SFSLightEffectTypeMediumLight];
+    
+}
 
 - (IBAction)sendLocationToServer:(id)sender {
     
@@ -172,5 +184,76 @@
 - (void)setPlaceCacheDescriptorForCoordinates:(CLLocationCoordinate2D)coordinates {
     NSLog(@"");
 }
+
+#pragma mark - SFSCollectionMenuDelegate methods
+
+- (UIView *)viewForMenu {
+    return self.view;
+}
+
+- (NSInteger)numberOfButtonsInMenuController:(SFSCollectionMenuController *)controller {
+    return 6;
+}
+
+- (UIImage *)imageForButtonAtIndexPath:(NSIndexPath *)indexPath {
+    NSArray *images = @[[UIImage imageNamed:@"camera"],
+                        [UIImage imageNamed:@"chatBubble"],
+                        [UIImage imageNamed:@"phone"],
+                        [UIImage imageNamed:@"star"],
+                        [UIImage imageNamed:@"tag"],
+                        [UIImage imageNamed:@"voicemail"]];
+    return images[indexPath.row];
+}
+
+- (UIColor *)backgroundColorForButtonAtIndexPath:(NSIndexPath *)indexPath {
+    return  [UIColor redColor]; //  [UIColor colorWithRed:0.25 green:0.25 blue:0.25 alpha:1.0];
+}
+
+- (void)controller:(SFSCollectionMenuController *)controller didTapButtonAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *text = [NSString stringWithFormat:@"Button %d tapped", indexPath.row];
+
+}
+
+- (NSString *)accessibilityLabelForButtonAtIndexPath:(NSIndexPath *)indexPath {
+    NSArray *labels = @[@"Camera",
+                        @"Chat",
+                        @"Phone",
+                        @"Star",
+                        @"Tag",
+                        @"Voicemail"];
+    return labels[indexPath.row];
+}
+
+- (NSString *)accessibilityHintForButtonAtIndexPath:(NSIndexPath *)indexPath {
+    NSArray *hints = @[@"Opens the camera",
+                       @"Starts a chat session",
+                       @"Opens the phone app",
+                       @"Marks this as a favorite",
+                       @"Tags this for later",
+                       @"Opens the voicemail interface to listen to voicemails"];
+    return hints[indexPath.row];
+}
+
+- (UIImage *)imageForCloseButton {
+    return [UIImage imageNamed:@"closeButtonGray"];
+}
+
+- (NSString *)labelTextForMenu {
+    return @"My Menu";
+}
+
+- (UIColor *)colorForLabelText {
+    return [UIColor whiteColor];
+}
+
+- (NSString *)accessibilityHintForMenuLabel {
+    return @"Displaying My Menu to choose an option";
+}
+
+- (NSString *)accessibilityLabelForMenuLabel {
+    return @"My Menu";
+}
+
+
 
 @end

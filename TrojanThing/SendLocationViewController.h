@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "SFSCollectionMenuController.h"
 
-@interface SendLocationViewController : UIViewController <CLLocationManagerDelegate>
+@interface SendLocationViewController : UIViewController <CLLocationManagerDelegate, SFSCollectionMenuDelegate>
 
 @end
