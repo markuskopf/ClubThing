@@ -680,6 +680,7 @@
 					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DFC028A9-47A0-4D66-A17C-FF5BDC24EC33";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -703,6 +704,7 @@
 					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DFC028A9-47A0-4D66-A17C-FF5BDC24EC33";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
