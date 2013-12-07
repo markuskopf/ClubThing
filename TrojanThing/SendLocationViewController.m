@@ -210,7 +210,7 @@
 }
 
 - (void)controller:(SFSCollectionMenuController *)controller didTapButtonAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *text = [NSString stringWithFormat:@"Button %d tapped", indexPath.row];
+//    NSString *text = [NSString stringWithFormat:@"Button %d tapped", indexPath.row];
 
 }
 

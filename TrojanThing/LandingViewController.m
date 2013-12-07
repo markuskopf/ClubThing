@@ -93,11 +93,11 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"location_segue"])
-	{
-        SendLocationViewController *locationSendVC = segue.destinationViewController;
-        // do some magic
-	}
+//    if ([segue.identifier isEqualToString:@"location_segue"])
+//	{
+//        SendLocationViewController *locationSendVC = segue.destinationViewController;
+//        // do some magic
+//	}
 }
 
 -(void)facebookLogIn:(FBSessionState)status handleError:(NSError *)error
