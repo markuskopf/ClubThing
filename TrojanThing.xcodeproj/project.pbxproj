@@ -667,7 +667,8 @@
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Markus Kopf (2RRJ3L3U97)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/markuskopf/Documents/FacebookSDK,
@@ -680,7 +681,7 @@
 					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DFC028A9-47A0-4D66-A17C-FF5BDC24EC33";
+				PROVISIONING_PROFILE = "6A8D37BB-4DAA-4836-9A8E-FD75A5018DF9";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -691,7 +692,7 @@
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/markuskopf/Documents/FacebookSDK,
@@ -704,7 +705,7 @@
 					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DFC028A9-47A0-4D66-A17C-FF5BDC24EC33";
+				PROVISIONING_PROFILE = "6A8D37BB-4DAA-4836-9A8E-FD75A5018DF9";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
