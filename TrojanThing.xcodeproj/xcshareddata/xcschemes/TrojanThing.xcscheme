@@ -20,6 +20,20 @@
                ReferencedContainer = "container:TrojanThing.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "75C2E7C1181BDE3100A324E8"
+               BuildableName = "TrojanThingTests.xctest"
+               BlueprintName = "TrojanThingTests"
+               ReferencedContainer = "container:TrojanThing.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
