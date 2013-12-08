@@ -423,6 +423,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Markus Kopf";
 				TargetAttributes = {
+					75C2E7A0181BDE3100A324E8 = {
+						DevelopmentTeam = Y9J27A34XZ;
+					};
 					75C2E7C1181BDE3100A324E8 = {
 						TestTargetID = 75C2E7A0181BDE3100A324E8;
 					};
@@ -667,7 +670,7 @@
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -692,7 +695,7 @@
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/markuskopf/Documents/FacebookSDK,
