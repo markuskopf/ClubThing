@@ -698,10 +698,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -722,10 +724,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6A8D37BB-4DAA-4836-9A8E-FD75A5018DF9";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
