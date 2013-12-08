@@ -634,10 +634,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/Users/markuskopf/Projects/ClubThing/3rd,
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "/Users/markuskopf/Projects/ClubThing/3rd/**";
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "6A8D37BB-4DAA-4836-9A8E-FD75A5018DF9";
 				SDKROOT = iphoneos;
@@ -675,10 +675,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/Users/markuskopf/Projects/ClubThing/3rd,
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "/Users/markuskopf/Projects/ClubThing/3rd/**";
 				PROVISIONING_PROFILE = "6A8D37BB-4DAA-4836-9A8E-FD75A5018DF9";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -699,11 +699,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
 				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -721,11 +725,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrojanThing/TrojanThing-Prefix.pch";
 				INFOPLIST_FILE = "TrojanThing/TrojanThing-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/markuskopf/Projects/ClubThing/TrojanThing/TrojanThing,
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6A8D37BB-4DAA-4836-9A8E-FD75A5018DF9";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -750,9 +758,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
+					"/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers/**",
 				);
 				INFOPLIST_FILE = "TrojanThingTests/TrojanThingTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
+					/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = /Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers;
@@ -776,9 +789,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
+					"/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers/**",
 				);
 				INFOPLIST_FILE = "TrojanThingTests/TrojanThingTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/markuskopf/Projects/ClubThing/3rd/**",
+					/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = /Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers;
