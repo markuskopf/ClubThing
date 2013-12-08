@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <FacebookSDK/FBSessionTokenCachingStrategy.h>
 #import <FacebookSDK/FacebookSDK.h>
 #import "LandingViewController.h"
 #import "TestFlight.h"
