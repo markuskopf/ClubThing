@@ -614,6 +614,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Markus Kopf (2RRJ3L3U97)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -638,6 +639,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "/Users/markuskopf/Projects/ClubThing/3rd/**";
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "6A8D37BB-4DAA-4836-9A8E-FD75A5018DF9";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -659,6 +661,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -676,6 +679,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "/Users/markuskopf/Projects/ClubThing/3rd/**";
+				PROVISIONING_PROFILE = "6A8D37BB-4DAA-4836-9A8E-FD75A5018DF9";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -713,7 +717,7 @@
 			baseConfigurationReference = 09A872D60D834667B04629E7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/markuskopf/Projects/ClubThing/3rd/**",
