@@ -678,7 +678,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Markus Kopf (Y9J27A34XZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK,
+					"/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers/**",
 					/Users/markuskopf/Projects/ClubThing/3rd,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -703,7 +703,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK,
+					"/Users/markuskopf/Projects/ClubThing/3rd/FacebookSDK/FacebookSDK.framework/Versions/A/Headers/**",
 					/Users/markuskopf/Projects/ClubThing/3rd,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
