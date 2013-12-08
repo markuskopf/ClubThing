@@ -108,7 +108,6 @@
 		7582E1FD181C060C005E5B8D /* SendLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendLocationViewController.h; sourceTree = "<group>"; };
 		7582E1FE181C060C005E5B8D /* SendLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendLocationViewController.m; sourceTree = "<group>"; };
 		75902481181C3537004E01C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		75A594881854BD6A00C9DE38 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../3rd/FacebookSDK.framework; sourceTree = "<group>"; };
 		75A5948A1854BDD800C9DE38 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../3rd/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		75C2E7A1181BDE3100A324E8 /* TrojanThing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrojanThing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C2E7A4181BDE3100A324E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -288,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				75A5948A1854BDD800C9DE38 /* FacebookSDK.framework */,
-				75A594881854BD6A00C9DE38 /* FacebookSDK.framework */,
 				75C46BCB183BC2D200C47915 /* AddressBook.framework */,
 				75C46BC3183BADE300C47915 /* MapKit.framework */,
 				75E4CBF8183AC6BC00CA1DDC /* libz.dylib */,
